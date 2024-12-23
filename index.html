@@ -2,8 +2,80 @@
 <html>
     <head>
         <title>Paul Thomas Games</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500" rel="stylesheet">
+
+        <style>
+            body {
+                margin: 0;
+                background: black;
+                overflow: hidden;
+            }
+
+            #main_container {
+                width: 90vw;
+                height: 100%;
+                padding: 5vw;
+            }
+
+            #group_unit {
+                width: 100%;
+                padding: 0;
+            }
+
+            h1,p,button {
+                font-family: "Inter Tight", serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+                color: white;
+            }
+
+            h1 {
+                font-size: 8vw;
+                margin: 0;
+                margin-bottom: 1vw;
+            }
+
+            p,button {
+                font-size: 2vw;
+                margin: 0;
+                line-height: 3vw;
+            }
+
+            button {
+                width: 20vw;
+                height: 4vw;
+                background: none;
+                outline: none;
+                border: 1px solid white;
+                color: white;
+                transition: all 200ms ease-out;
+                margin-top: 2vw;
+            }
+
+            button:hover {
+                background: white;
+                outline: none;
+                color: black;
+            }
+
+        </style>
+    
     </head>
     <body>
-        <p1>Hello world!</p1>
+        <div id="main_container">
+
+            <hr>
+
+            <div id="group_unit">
+                <h1>PAUL THOMAS<br>GAMES LLC.</h1>
+                <p>Hello there, I'm Paul Thomas.<br>I make 3D animations and design video games.</p>
+                <button>MY WORK ↓</button>
+            </div>
+        </div>
     </body>
 </html>
