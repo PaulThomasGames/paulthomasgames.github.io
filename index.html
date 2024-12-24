@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
         <script>
             function openURL(url) {
@@ -17,7 +18,29 @@
 
             window.onload = (event) => {
                 document.getElementById("p_intro").innerHTML = `Hello there, I am Paul Thomas.<br>I'm ${moment().diff('2007-07-08', 'years')} years old and I design video games and other digital media.`;
+                if($(window).width() < $(window).height()) {
+                    document.getElementById("box_main").style.display = "none";
+                    document.getElementById("box_alt").style.display = "block";
+                    console.log("rot");
+                } else {
+                    document.getElementById("box_main").style.display = "block";
+                    document.getElementById("box_alt").style.display = "none";
+                }
             }
+
+            window.onresize = (event) => {
+                document.getElementById("p_intro").innerHTML = `Hello there, I am Paul Thomas.<br>I'm ${moment().diff('2007-07-08', 'years')} years old and I design video games and other digital media.`;
+                if($(window).width() < $(window).height()) {
+                    document.getElementById("box_main").style.display = "none";
+                    document.getElementById("box_alt").style.display = "block";
+                    console.log("rot");
+                } else {
+                    document.getElementById("box_main").style.display = "block";
+                    document.getElementById("box_alt").style.display = "none";
+                }
+            }
+
+
         </script>
 
         <style>
@@ -53,7 +76,7 @@
                 border-bottom: 1px solid white;
             }
 
-            #main_container {
+            .main_container {
                 width: 90vw;
                 height: 100%;
                 padding: 5vw;
@@ -175,7 +198,7 @@
     
     </head>
     <body>
-        <div id="main_container">
+        <div class="main_container" id="box_main" style="display: block;">
 
             <hr>
 
@@ -208,7 +231,7 @@
                     <h1>BACKROOMS FOOTAGE.</h1>
                     <p>Horror / Animations 3D. Released January 2022 on Youtube.</p>
                     <div class="img_container"><img src="backrooms_thumbnail.png"><p class="img_credits">"The backrooms wallpaper texture" by "Scans and textures" is licensed under Creative Commons Attribution.</p></div>
-                    <p>An unknown person explores three levels in the Backrooms, garnerning over 1 million views online.</p>
+                    <p>An unknown explorer records three levels in the Backrooms, garnerning over 1 million views online.</p>
                     <button onclick='openURL("www.youtube.com/watch?v=9yxDYUO6kBA")'>CHECK IT OUT</button>
                     <button onclick='openURL("www.youtube.com/playlist?list=PLVokARXe-gge82phiN4VDclw__-Lo7gPH")' style="margin-left: 1vh;">SEE PLAYLIST</button>
                 </div>
@@ -240,6 +263,11 @@
             </div>
 
 
+        </div>
+        <div class="main_container" id="box_alt" style="display: none;">
+            <hr>
+            <h1>ROTATE YOUR DEVICE</h1>
+            <p>This website is viewed best in landscape mode.</p>
         </div>
     </body>
 </html>
