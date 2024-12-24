@@ -1,29 +1,130 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Paul Thomas Games</title>
+        <title>Paul Thomas Projects</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+
+        <script>
+            function openURL(url) {
+                window.open("https://" + url, '_blank').focus();
+            }
+
+            window.onload = (event) => {
+                document.getElementById("p_intro").innerHTML = `Hello there, I am Paul Thomas.<br>I'm ${moment().diff('2007-07-08', 'years')} years old and I design video games and other digital media.`;
+            }
+        </script>
 
         <style>
+
+            html {
+                scroll-behavior: smooth;
+            }
+
             body {
                 margin: 0;
                 background: black;
-                overflow: hidden;
+                overflow-x: hidden;
+            }
+
+            ::-webkit-scrollbar {
+            width: 2px;
+            }
+
+            ::-webkit-scrollbar-track {
+            background: black;
+            }
+
+            ::-webkit-scrollbar-thumb {
+            background: #ffffff;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+            background: #ffffff;
+            }
+
+            hr {
+                border: none;
+                border-bottom: 1px solid white;
             }
 
             #main_container {
                 width: 90vw;
                 height: 100%;
                 padding: 5vw;
+                margin: 0;
             }
 
-            #group_unit {
-                width: 100%;
+            div.group_spacer {
+                margin: 0;
                 padding: 0;
+                width: 100%;
+                height: 50vh;
+                background: none;
+            }
+
+            div.group_unit {
+                width: 100%;
+                height: 160vh;
+                padding: 0;
+                margin: 0;
+                border: none;
+            }
+
+            div.group_title {
+                width: 100%;
+                height: auto;
+                padding: 0;
+                margin: 0;
+            }
+
+            div.sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 5vh;
+                background-color: none;
+                border: none;
+                overflow: hidden;
+                height: 90vh;
+                border: none;
+            }
+
+            div.img_container {
+                position: relative;
+                width: 90vw;
+                height: calc(50vh - 6vw);
+                max-height: 40vw;
+                margin: 0;
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+                padding: 0;
+                border: none;
+            }
+
+            img {
+                margin: 0;
+                width: auto;
+                height: 100%;
+                padding: 0;
+                overflow: hidden;
+                object-fit: cover;
+            }
+
+            p.img_credits {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                font-size: min(.8vw,1.2vh);
+                width: 100%;
+                margin: 0;
+                line-height: 0;
+                background-color: rgba(0,0,0,0.6);
+                padding: min(.8vw,1vh);
             }
 
             h1,p,button {
@@ -35,26 +136,32 @@
             }
 
             h1 {
-                font-size: 8vw;
+                font-size: min(7vw,12vh);
                 margin: 0;
-                margin-bottom: 1vw;
+                margin-bottom: min(1vw,1.50vh);
             }
 
-            p,button {
-                font-size: 2vw;
+            p {
+                font-size: min(2vw,4vh);
                 margin: 0;
-                line-height: 3vw;
+                line-height: min(3vw,6vh);
+            }
+
+            a {
+                color: rgb(200,200,200);
             }
 
             button {
-                width: 20vw;
-                height: 4vw;
+                width: min(25vw,60vh);
+                height: min(4vw,10vh);
                 background: none;
                 outline: none;
                 border: 1px solid white;
                 color: white;
                 transition: all 200ms ease-out;
-                margin-top: 2vw;
+                margin: 0;
+                margin-top: min(2vw,5vh);
+                font-size: min(2.50vw,6vh);
             }
 
             button:hover {
@@ -71,11 +178,67 @@
 
             <hr>
 
-            <div id="group_unit">
+            <div class`="group_title">
                 <h1>PAUL THOMAS<br>GAMES LLC.</h1>
-                <p>Hello there, I'm Paul Thomas.<br>I make 3D animations and design video games.</p>
-                <button>MY WORK ↓</button>
+                <p id="p_intro">Hello there, I'm Paul Thomas.<br>I'm {age} years old and I design video games.</p>
+                <button onclick="document.getElementById('first_group').scrollIntoView()">MY WORK ↓</button>
             </div>
+
+            <div class="group_spacer"></div>
+
+            <div class="group_unit" id="first_group">
+                <div class="sticky">
+                    <hr>
+                    <h1>THE NEW APARTMENT.</h1>
+                    <p>Horror / Video game. Available January 2025 on Steam.</p>
+                    <div class="img_container"><img src="the_new_apartment_thumbnail.png"><p class="img_credits">Gameplay snapshot from "The New Apartment."</p></div>
+                    <p>A man living in his new apartment finds himself in the center of something much more sinister.</p>
+                    <button onclick='openURL("store.steampowered.com/app/3404410/The_New_Apartment")'>CHECK IT OUT</button>
+                    <button onclick='openURL("youtu.be/llPejHdxhPc")' style="margin-left: 1vh;">WATCH TEASER</button>
+                </div>
+            </div>
+
+            <div class="group_spacer">
+            </div>
+
+            <div class="group_unit">
+                <div class="sticky">
+                    <hr>
+                    <h1>BACKROOMS FOOTAGE.</h1>
+                    <p>Horror / Animations 3D. Released January 2022 on Youtube.</p>
+                    <div class="img_container"><img src="backrooms_thumbnail.png"><p class="img_credits">"The backrooms wallpaper texture" by "Scans and textures" is licensed under Creative Commons Attribution.</p></div>
+                    <p>An unknown person explores three levels in the Backrooms, garnerning over 1 million views online.</p>
+                    <button onclick='openURL("www.youtube.com/watch?v=9yxDYUO6kBA")'>CHECK IT OUT</button>
+                    <button onclick='openURL("www.youtube.com/playlist?list=PLVokARXe-gge82phiN4VDclw__-Lo7gPH")' style="margin-left: 1vh;">SEE PLAYLIST</button>
+                </div>
+            </div>
+
+            <div class="group_spacer">
+            </div>
+
+            <div class="group_unit">
+                <div class="sticky">
+                    <hr>
+                    <h1>TURKEY TERMINATOR.</h1>
+                    <p>Arcade / Mobile game. Released December 2021 on Google Play (now expired).</p>
+                    <div class="img_container"><img src="turkey_terminator_thumbnail.png"><p class="img_credits">Extended mobile game thumbnail.</p></div>
+                    <p>A pixel art turkey runs and jumps from a hunter while avoiding oncoming traps.</p>
+                    <button onclick='openURL("skich.app/games/turkey-terminator")'>CHECK IT OUT</button>
+                </div>
+            </div>
+
+            <div class="group_spacer">
+            </div>
+
+            <div class="group_title">
+                <hr>
+                <h1>MORE COMING SOON.</h1>
+                <p>More projects coming in the future.</p>
+                <p>Any questions? Contact me at <a href="mailto:paulthomashorror@gmail.com" target="_blank">paulthomashorror@gmail.com</a>.</p>
+                <button onclick='window.scrollTo(0,0)'>BACK TO TOP</button>
+            </div>
+
+
         </div>
     </body>
 </html>
