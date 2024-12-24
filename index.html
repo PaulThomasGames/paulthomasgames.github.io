@@ -99,7 +99,7 @@
                 border: none;
             }
 
-            div.group_title {
+            div.group_marginal {
                 width: 100%;
                 height: auto;
                 padding: 0;
@@ -194,6 +194,42 @@
                 color: black;
             }
 
+            #scroll_container {
+                position: absolute;
+                top: 2vw;
+                border: none;
+                overflow: hidden;
+                border: none;
+                width: 90vw;
+            }
+
+            .horizontal_items {
+                display: flex;
+                line-height: 0;
+                width: fit-content;
+            }
+
+            .horizontal_item {
+                white-space: nowrap;
+            }
+
+            .horizontal {
+                color: rgb(50,50,50);
+                font-size: 1vw;
+            }
+
+            @keyframes infiniteScroll {
+                from {transform: translateX(0) }
+                to {transform: translateX(calc(0% - 50%));}
+            }
+
+            .horizontal_items {
+                animation-name: infiniteScroll;
+                animation-duration: 45s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
         </style>
     
     </head>
@@ -201,9 +237,51 @@
         <noscript>This website does not work without JavaScript enabled.</noscript>
         <div class="main_container" id="box_main" style="display: none;">
 
+            <div id="scroll_container">
+
+                <div class="horizontal_items">
+
+                    <div class="horizontal_item">
+                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                    </div>
+                        
+                    <div class="horizontal_item">
+                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                    </div>
+
+                    <div class="horizontal_item">
+                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                    </div>
+
+                    <div class="horizontal_item">
+                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                    </div>
+
+                    
+                    <div class="horizontal_item">
+                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                    </div>
+                        
+                    <div class="horizontal_item">
+                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                    </div>
+
+                    <div class="horizontal_item">
+                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                    </div>
+
+                    <div class="horizontal_item">
+                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
             <hr>
 
-            <div class`="group_title">
+            <div class`="group_marginal">
                 <h1>PAUL THOMAS<br>GAMES LLC.</h1>
                 <p id="p_intro">Hello there, I'm Paul Thomas.<br>I'm {age} years old and I design video games.</p>
                 <button onclick="document.getElementById('first_group').scrollIntoView()">MY WORK ↓</button>
@@ -255,7 +333,7 @@
             <div class="group_spacer">
             </div>
 
-            <div class="group_title">
+            <div class="group_marginal">
                 <hr>
                 <h1>MORE COMING SOON.</h1>
                 <p>More projects coming in the future.</p>
