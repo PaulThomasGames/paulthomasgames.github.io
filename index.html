@@ -17,7 +17,7 @@
             }
 
             window.onload = (event) => {
-                document.getElementById("p_intro").innerHTML = `Hello there, I am Paul Thomas and ${moment().diff('2007-07-08', 'years')} years old.<br>I design video games and other digital media.`;
+                document.getElementById("p_intro").innerHTML = `Hello there, my name is Paul Thomas and I'm ${moment().diff('2007-07-08', 'years')} years old.<br>I design video games and other digital media.`;
                 if($(window).width() < $(window).height()) {
                     document.getElementById("box_main").style.display = "none";
                     document.getElementById("box_alt").style.display = "block";
@@ -357,7 +357,7 @@
 
             <div class="group_marginal">
                 <h1 class="marginal_header">PAUL THOMAS<br>GAMES LLC.</h1>
-                <p class="marginal_p" id="p_intro">Hello there, I'm Paul Thomas and {age} years old.<br>I design video games and other digital media.</p>
+                <p class="marginal_p" id="p_intro">Hello there, my name is Paul Thomas and I'm {age} years old.<br>I design video games and other digital media.</p>
                 <button class="marginal_button" onclick="document.getElementById('first_group').scrollIntoView()">MY WORK
                     <span class="arrow material-symbols-outlined">
                         arrow_downward
