@@ -26,6 +26,15 @@
                     document.getElementById("box_main").style.display = "block";
                     document.getElementById("box_alt").style.display = "none";
                 }
+
+                const horizontal_elements = document.getElementsByClassName("horizontal");
+                const media_entries = ["THE NEW APARTMENT", "BACKROOMS FOUND FOOTAGE", "TURKEY TERMINATOR", "PROJECTED RAYMARCHING"]
+                const media_string = media_entries.join(' • ') + ' •&nbsp';
+
+                for (const element of horizontal_elements) {
+                    element.innerHTML = media_string;
+                }
+
             }
 
             window.onresize = (event) => {
@@ -137,6 +146,14 @@
                 padding: 0;
                 overflow: hidden;
                 object-fit: cover;
+
+                user-drag: none;
+                -webkit-user-drag: none;
+                user-select: none;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+
             }
 
             p.img_credits {
@@ -242,36 +259,36 @@
                 <div class="horizontal_items">
 
                     <div class="horizontal_item">
-                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                        <p class="horizontal"></p>
                     </div>
                         
                     <div class="horizontal_item">
-                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                        <p class="horizontal"></p>
                     </div>
 
                     <div class="horizontal_item">
-                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                        <p class="horizontal"></p>
                     </div>
 
                     <div class="horizontal_item">
-                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                        <p class="horizontal"></p>
                     </div>
 
                     
                     <div class="horizontal_item">
-                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                        <p class="horizontal"></p>
                     </div>
                         
                     <div class="horizontal_item">
-                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                        <p class="horizontal"></p>
                     </div>
 
                     <div class="horizontal_item">
-                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                        <p class="horizontal"></p>
                     </div>
 
                     <div class="horizontal_item">
-                        <p class="horizontal">THE NEW APARTMENT • BACKROOMS FOUND FOOTAGE • TURKEY TERMINATOR •&nbsp</p>
+                        <p class="horizontal"></p>
                     </div>
 
 
@@ -327,6 +344,20 @@
                     <div class="img_container"><img src="turkey_terminator_thumbnail.png"><p class="img_credits">Extended mobile game thumbnail.</p></div>
                     <p>A pixel art turkey runs and jumps from a hunter while avoiding oncoming traps.</p>
                     <button onclick='openURL("skich.app/games/turkey-terminator")'>CHECK IT OUT</button>
+                </div>
+            </div>
+
+            <div class="group_spacer">
+            </div>
+
+            <div class="group_unit">
+                <div class="sticky">
+                    <hr>
+                    <h1>RAYMARCHING.</h1>
+                    <p>Proof of concept / Interactive website. Written September 2024.</p>
+                    <div class="img_container"><img src="raymarcher_thumbnail.png"><p class="img_credits">3D artwork made in Blender.</p></div>
+                    <p>Explore a simple 3D world processed through an experimental rendering method.</p>
+                    <button onclick='openURL("sites.google.com/view/raymarching-js/home")'>CHECK IT OUT</button>
                 </div>
             </div>
 
