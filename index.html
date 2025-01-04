@@ -6,18 +6,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hind+Mysuru:wght@500&family=Inter+Tight:wght@500&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=open_in_new" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward,arrow_upward,open_in_new" />
         <script>
-            function openURL(url) {
+            function openURL (url) {
                 window.open("https://" + url, '_blank').focus();
             }
 
             window.onload = (event) => {
-                document.getElementById("p_intro").innerHTML = `Hello there, I am Paul Thomas.<br>I'm ${moment().diff('2007-07-08', 'years')} years old and I design video games and other digital media.`;
+                document.getElementById("p_intro").innerHTML = `Hello there, I am Paul Thomas and ${moment().diff('2007-07-08', 'years')} years old.<br>I design video games and other digital media.`;
                 if($(window).width() < $(window).height()) {
                     document.getElementById("box_main").style.display = "none";
                     document.getElementById("box_alt").style.display = "block";
@@ -38,7 +38,6 @@
             }
 
             window.onresize = (event) => {
-                document.getElementById("p_intro").innerHTML = `Hello there, I am Paul Thomas.<br>I'm ${moment().diff('2007-07-08', 'years')} years old and I design video games and other digital media.`;
                 if($(window).width() < $(window).height()) {
                     document.getElementById("box_main").style.display = "none";
                     document.getElementById("box_alt").style.display = "block";
@@ -57,6 +56,7 @@
 
             html {
                 scroll-behavior: smooth;
+                cursor:default;
             }
 
             body {
@@ -66,7 +66,7 @@
             }
 
             ::-webkit-scrollbar {
-            width: 2px;
+            width: 6px;
             }
 
             ::-webkit-scrollbar-track {
@@ -83,7 +83,7 @@
 
             hr {
                 border: none;
-                border-bottom: 1px solid white;
+                border-bottom: 6px solid white;
             }
 
             .main_container {
@@ -169,24 +169,46 @@
                 padding: min(.8vw,1vh);
             }
 
-            h1,p,button {
-                font-family: "Inter Tight", serif;
+            p {
+                font-family: "Hind Mysuru", serif;
                 font-optical-sizing: auto;
                 font-weight: 500;
+                font-style: normal;
+                color: white;
+                font-size: min(1.80vw,3.60vh);
+                line-height: min(3.20vw,5.20vh);
+                margin: 0;
+            }
+
+            p.marginal_p {
+                font-size: min(3.00vw,4.60vh);
+                line-height: min(3.80vw,5.80vh);
+            }
+
+            button {
+                font-family: "Archivo Black", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
                 font-style: normal;
                 color: white;
             }
 
             h1 {
-                font-size: min(7vw,12vh);
+                font-size: min(6.50vw,11.50vh);
                 margin: 0;
                 margin-bottom: min(1vw,1.50vh);
+                line-height: min(7.00vw,12.00vh);
+                font-family: "Archivo Black", serif;
+                font-weight: 400;
+                font-style: normal;
+                color: white;
+                transition: all 200ms ease-out;
             }
 
-            p {
-                font-size: min(2vw,4vh);
-                margin: 0;
-                line-height: min(3vw,6vh);
+            h1.marginal_header {
+                font-size: min(7.50vw,12.50vh);
+                line-height: min(7.50vw,12.50vh);
+                margin-bottom: min(1.80vw,2.80vh);
             }
 
             a {
@@ -198,19 +220,28 @@
                 height: min(4vw,10vh);
                 background: none;
                 outline: none;
-                border: 1px solid white;
+                border: 2px solid white;
                 color: white;
                 transition: all 200ms ease-out;
                 margin: 0;
                 margin-top: min(2vw,5vh);
-                font-size: min(2.50vw,6vh);
+                font-size: min(2.20vw,5.40vh);
                 cursor: pointer;
             }
 
+            button.marginal_button {
+                margin-top: min(3vw,5vh);
+            }
+
             button:hover {
-                background: white;
+                background: #ff350d;
                 outline: none;
+                border: none;
                 color: black;
+            }
+
+            h1:hover {
+                color:#ff350d;
             }
 
             #scroll_container {
@@ -233,8 +264,11 @@
             }
 
             .horizontal {
-                color: rgb(50,50,50);
+                color: white;
                 font-size: 1vw;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
             }
 
             @keyframes infiniteScroll {
@@ -249,15 +283,19 @@
                 animation-timing-function: linear;
             }
 
-
             .material-symbols-outlined {
-                font-size: min(1.75vw,3.00vh);
                 font-variation-settings:
                 'FILL' 0,
-                'wght' 300,
+                'wght' 800,
                 'GRAD' 0,
                 'opsz' 24
             }
+
+            .external_link, .arrow {
+                font-size: min(1.50vw,2.80vh);
+            }
+
+            
 
 
 
@@ -288,7 +326,6 @@
                         <p class="horizontal"></p>
                     </div>
 
-                    
                     <div class="horizontal_item">
                         <p class="horizontal"></p>
                     </div>
@@ -313,9 +350,13 @@
             <hr>
 
             <div class="group_marginal">
-                <h1>PAUL THOMAS<br>GAMES LLC.</h1>
-                <p id="p_intro">Hello there, I'm Paul Thomas.<br>I'm {age} years old and I design video games.</p>
-                <button onclick="document.getElementById('first_group').scrollIntoView()">MY WORK ↓</button>
+                <h1 class="marginal_header">PAUL THOMAS<br>GAMES LLC.</h1>
+                <p class="marginal_p" id="p_intro">Hello there, I'm Paul Thomas and {age} years old.<br>I design video games and other digital media.</p>
+                <button class="marginal_button" onclick="document.getElementById('first_group').scrollIntoView()">MY WORK
+                    <span class="arrow material-symbols-outlined">
+                        arrow_downward
+                    </span>
+                </button>
             </div>
 
             <div class="group_spacer"></div>
@@ -328,12 +369,12 @@
                     <div class="img_container"><img src="the_new_apartment_thumbnail.png"><p class="img_credits">Gameplay snapshot from "The New Apartment."</p></div>
                     <p>A man living in his new apartment finds himself in the center of something much more sinister.</p>
                     <button onclick='openURL("store.steampowered.com/app/3404410/The_New_Apartment")'>CHECK IT OUT
-                        <span class="material-symbols-outlined">
+                        <span class="external_link material-symbols-outlined">
                             open_in_new
                         </span>
                     </button>
                     <button onclick='openURL("youtu.be/llPejHdxhPc")' style="margin-left: 1vh;">WATCH TEASER
-                        <span class="material-symbols-outlined">
+                        <span class="external_link material-symbols-outlined">
                             open_in_new
                         </span>
                     </button>
@@ -347,16 +388,16 @@
                 <div class="sticky">
                     <hr>
                     <h1>BACKROOMS FOOTAGE.</h1>
-                    <p>Horror / Animations 3D. Released January 2022 on Youtube.</p>
+                    <p>Horror / Animations 3D. Released January 2022 on YouTube.</p>
                     <div class="img_container"><img src="backrooms_thumbnail.png"><p class="img_credits">"The backrooms wallpaper texture" by "Scans and textures" is licensed under Creative Commons Attribution.</p></div>
                     <p>An unknown explorer records three levels in the Backrooms, garnerning over 1 million views online.</p>
                     <button onclick='openURL("www.youtube.com/watch?v=9yxDYUO6kBA")'>CHECK IT OUT
-                        <span class="material-symbols-outlined">
+                        <span class="external_link material-symbols-outlined">
                             open_in_new
                         </span>
                     </button>
                     <button onclick='openURL("www.youtube.com/playlist?list=PLVokARXe-gge82phiN4VDclw__-Lo7gPH")' style="margin-left: 1vh;">SEE PLAYLIST
-                        <span class="material-symbols-outlined">
+                        <span class="external_link material-symbols-outlined">
                             open_in_new
                         </span>
                     </button>
@@ -374,7 +415,7 @@
                     <div class="img_container"><img src="turkey_terminator_thumbnail.png"><p class="img_credits">Extended mobile game thumbnail.</p></div>
                     <p>A pixel art turkey runs and jumps from a hunter while avoiding oncoming traps.</p>
                     <button onclick='openURL("skich.app/games/turkey-terminator")'>CHECK IT OUT
-                        <span class="material-symbols-outlined">
+                        <span class="external_link material-symbols-outlined">
                             open_in_new
                         </span>
                     </button>
@@ -392,7 +433,7 @@
                     <div class="img_container"><img src="raymarcher_thumbnail.png"><p class="img_credits">3D artwork made in Blender.</p></div>
                     <p>Explore a simple 3D world processed through an experimental rendering method.</p>
                     <button onclick='openURL("sites.google.com/view/raymarching-js/home")'>CHECK IT OUT
-                        <span class="material-symbols-outlined">
+                        <span class="external_link material-symbols-outlined">
                             open_in_new
                         </span>
                     </button>
@@ -404,14 +445,37 @@
 
             <div class="group_marginal">
                 <hr>
-                <h1>MORE COMING SOON.</h1>
-                <p>More projects coming in the future.</p>
-                <p>Any questions? Contact me at <a href="mailto:paulthomashorror@gmail.com" target="_blank">paulthomashorror@gmail.com</a>.</p>
-                <button onclick='window.scrollTo(0,0)'>BACK TO TOP</button>
+                <h1>FONT LICENSING.</h1>
+                <p>
+                    Copyright 2017 The Archivo Black Project Authors (<a href="https://github.com/Omnibus-Type/ArchivoBlack">Omnibus-Type</a>)
+                    <br>
+                    Copyright 2015 Indian Type Foundry (<a href="mailto:info@indiantypefoundry.com">IndianTypeFoundry</a>)
+                    <br>
+                    SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007.</p>
+                <button onclick='openURL("openfontlicense.org")'>VIEW LICENSE
+                    <span class="external_link material-symbols-outlined">
+                        open_in_new
+                    </span>
+                </button>
             </div>
 
+            <div class="group_spacer">
+            </div>
 
+            <div class="group_marginal">
+                <hr>
+                <h1 class="marginal_header">MORE COMING SOON.</h1>
+                <p class="marginal_p">More projects coming in the future.</p>
+                <p class="marginal_p">Any questions? Contact me at <a href="mailto:paulthomashorror@gmail.com" target="_blank">paulthomashorror@gmail.com</a>.</p>
+                <button class="marginal_button" onclick='window.scrollTo(0,0)'>BACK TO TOP
+                    <span class="arrow material-symbols-outlined">
+                        arrow_upward
+                    </span>
+                </button>
+            </div>
         </div>
+
+
         <div class="main_container" id="box_alt" style="display: none;">
             <hr>
             <h1>ROTATE YOUR DEVICE</h1>
