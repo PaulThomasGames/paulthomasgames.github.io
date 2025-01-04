@@ -10,7 +10,7 @@
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=open_in_new" />
         <script>
             function openURL(url) {
                 window.open("https://" + url, '_blank').focus();
@@ -53,6 +53,7 @@
         </script>
 
         <style>
+
 
             html {
                 scroll-behavior: smooth;
@@ -247,6 +248,18 @@
                 animation-timing-function: linear;
             }
 
+
+            .material-symbols-outlined {
+                font-size: min(1.75vw,3.00vh);
+                font-variation-settings:
+                'FILL' 0,
+                'wght' 300,
+                'GRAD' 0,
+                'opsz' 24
+            }
+
+
+
         </style>
     
     </head>
@@ -313,8 +326,16 @@
                     <p>Horror / Video game. Available January 2025 on Steam.</p>
                     <div class="img_container"><img src="the_new_apartment_thumbnail.png"><p class="img_credits">Gameplay snapshot from "The New Apartment."</p></div>
                     <p>A man living in his new apartment finds himself in the center of something much more sinister.</p>
-                    <button onclick='openURL("store.steampowered.com/app/3404410/The_New_Apartment")'>CHECK IT OUT</button>
-                    <button onclick='openURL("youtu.be/llPejHdxhPc")' style="margin-left: 1vh;">WATCH TEASER</button>
+                    <button onclick='openURL("store.steampowered.com/app/3404410/The_New_Apartment")'>CHECK IT OUT
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </button>
+                    <button onclick='openURL("youtu.be/llPejHdxhPc")' style="margin-left: 1vh;">WATCH TEASER
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </button>
                 </div>
             </div>
 
@@ -328,8 +349,16 @@
                     <p>Horror / Animations 3D. Released January 2022 on Youtube.</p>
                     <div class="img_container"><img src="backrooms_thumbnail.png"><p class="img_credits">"The backrooms wallpaper texture" by "Scans and textures" is licensed under Creative Commons Attribution.</p></div>
                     <p>An unknown explorer records three levels in the Backrooms, garnerning over 1 million views online.</p>
-                    <button onclick='openURL("www.youtube.com/watch?v=9yxDYUO6kBA")'>CHECK IT OUT</button>
-                    <button onclick='openURL("www.youtube.com/playlist?list=PLVokARXe-gge82phiN4VDclw__-Lo7gPH")' style="margin-left: 1vh;">SEE PLAYLIST</button>
+                    <button onclick='openURL("www.youtube.com/watch?v=9yxDYUO6kBA")'>CHECK IT OUT
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </button>
+                    <button onclick='openURL("www.youtube.com/playlist?list=PLVokARXe-gge82phiN4VDclw__-Lo7gPH")' style="margin-left: 1vh;">SEE PLAYLIST
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </button>
                 </div>
             </div>
 
@@ -343,7 +372,11 @@
                     <p>Arcade / Mobile game. Released December 2021 on Google Play (now expired).</p>
                     <div class="img_container"><img src="turkey_terminator_thumbnail.png"><p class="img_credits">Extended mobile game thumbnail.</p></div>
                     <p>A pixel art turkey runs and jumps from a hunter while avoiding oncoming traps.</p>
-                    <button onclick='openURL("skich.app/games/turkey-terminator")'>CHECK IT OUT</button>
+                    <button onclick='openURL("skich.app/games/turkey-terminator")'>CHECK IT OUT
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </button>
                 </div>
             </div>
 
@@ -357,7 +390,11 @@
                     <p>Proof of concept / Interactive website. Written September 2024.</p>
                     <div class="img_container"><img src="raymarcher_thumbnail.png"><p class="img_credits">3D artwork made in Blender.</p></div>
                     <p>Explore a simple 3D world processed through an experimental rendering method.</p>
-                    <button onclick='openURL("sites.google.com/view/raymarching-js/home")'>CHECK IT OUT</button>
+                    <button onclick='openURL("sites.google.com/view/raymarching-js/home")'>CHECK IT OUT
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </button>
                 </div>
             </div>
 
