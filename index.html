@@ -4,8 +4,6 @@
         <title>Paul Thomas Projects</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!--<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hind+Mysuru:wght@500&family=Inter+Tight:wght@500&display=swap" rel="stylesheet">-->
-        <!--<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">-->
         <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
@@ -93,6 +91,22 @@
                 margin: 0;
             }
 
+            div.socials {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                gap: min(1vw, 2vh);
+                margin-bottom: min(1.60vw,2.60vh);
+            }
+
+            svg {
+                width: min(2vw, 5vh);
+                height: min(2vw, 5vh);
+                fill: white;
+            }
+
             div.group_spacer {
                 margin: 0;
                 padding: 0;
@@ -177,23 +191,6 @@
                 line-height: min(3.20vw,5.20vh);
             }
 
-            p.img_credits {
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                font-size: min(0.8vw,1.2vh);
-                width: 100%;
-                height: fit-content;
-                line-height: min(0.8vw,1.2vh);
-                margin: 0;
-                /*height: 0;*/
-                /*line-height: 0;*/
-                background-color: rgba(0,0,0,0.6);
-                /*padding: min(0.6vw,0.9vh);*/
-                padding: 0;
-                /*padding: auto;*/
-            }
-
             button {
                 font-family: "Archivo", serif;
                 font-optical-sizing: auto;
@@ -215,18 +212,18 @@
                 font-optical-sizing: auto;
                 font-variation-settings:
                     "wdth" 100;
-                /*color: white;*/
                 transition: all 200ms ease-out;
             }
 
             h1.marginal_header {
                 font-size: min(7.50vw,12.50vh);
                 line-height: min(7.50vw,12.50vh);
-                margin-bottom: min(1.80vw,2.80vh);
+                margin-bottom: min(0.60vw,1.20vh);
             }
 
             a {
                 color: #00ffff;
+                cursor: pointer;
             }
 
             button {
@@ -244,13 +241,15 @@
             }
 
             button.condensed_button {
-                width: min(22vw,72vh);
+                width: min(16vw,60vh);
+                height: min(4vw,18vh);
+                font-size: min(1.80vw,5.40vh);
             }
 
             button.marginal_button {
                 margin-top: min(3vw,5vh);
                 width: min(28vw,84vh);
-                height: min(5vw,36vh);
+                height: min(5vw,16vh);
                 font-size: min(2.60vw,7.40vh);
             }
 
@@ -313,11 +312,11 @@
             }
 
             .external_link {
-                font-size: min(1.50vw,3.10vh);
+                font-size: min(1.20vw,3.10vh);
             }
 
             .arrow {
-                font-size: min(2.00vw,5.40vh);
+                font-size: min(1.75vw,4.40vh);
             }
 
 
@@ -377,6 +376,27 @@
 
             <div class="group_marginal">
                 <h1 class="marginal_header">PAUL THOMAS<br>GAMES LLC.</h1>
+
+                <div class="socials">
+                    <a onclick="openURL('www.youtube.com/@PaulThomas_Games')"><svg xmlns="http://www.w3.org/2000/svg" class="bi-youtube" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                    </svg></a>
+                    <a onclick="openURL('discord.gg/mKEyrj7ghP')"><svg xmlns="http://www.w3.org/2000/svg" class="bi-discord" viewBox="0 0 16 16">
+                        <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+                    </svg></a>
+                    <a onclick="openURL('steamcommunity.com/profiles/76561199806456929')"><svg xmlns="http://www.w3.org/2000/svg" class="bi-steam" viewBox="0 0 16 16">
+                        <path d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.2 2.2 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.22 2.22 0 0 1-1.312-1.568L.33 10.333Z"/>
+                        <path d="M4.868 12.683a1.715 1.715 0 0 0 1.318-3.165 1.7 1.7 0 0 0-1.263-.02l1.023.424a1.261 1.261 0 1 1-.97 2.33l-.99-.41a1.7 1.7 0 0 0 .882.84Zm3.726-6.687a2.03 2.03 0 0 0 2.027 2.029 2.03 2.03 0 0 0 2.027-2.029 2.03 2.03 0 0 0-2.027-2.027 2.03 2.03 0 0 0-2.027 2.027m2.03-1.527a1.524 1.524 0 1 1-.002 3.048 1.524 1.524 0 0 1 .002-3.048"/>
+                    </svg></a>
+                    <a onclick="openURL('x.com/PaulThomasGames')"><svg xmlns="http://www.w3.org/2000/svg" class="bi-twitter" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                    </svg></a>
+                    <a onclick="openURL('github.com/PaulThomasGames')"><svg xmlns="http://www.w3.org/2000/svg" class="bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg></a>
+                    
+                </div>
+                
                 <p class="marginal_p" id="p_intro">Hello there, my name is Paul Thomas and I'm {age} years old.<br>I design video games and other digital media.</p>
                 <button class="marginal_button" onclick="document.getElementById('first_group').scrollIntoView()">MY WORK
                     <span class="arrow material-symbols-outlined">
@@ -478,6 +498,8 @@
                     Archivo (<a href="https://omnibus-type.com">Omnibus-Type</a>) is licensed under the SIL Open Font License, Version 1.1.
                     <br>
                     Roboto (<a href="https://christianrobertson.com">Christian Robertson</a>) is licensed under the Apache License, Version 2.0.
+                    <br>
+                    Bootstrap (<a href="https://github.com/twbs/bootstrap">The Bootstrap Authors</a>) is licensed under the MIT License.
                 </p>
                 <button class="condensed_button" onclick='openURL("openfontlicense.org")'>SIL 1.1
                     <span class="external_link material-symbols-outlined">
@@ -490,6 +512,11 @@
                     </span>
                 </button>
                 <button class="condensed_button" onclick='openURL("creativecommons.org/licenses/by/4.0")'>CC 4.0
+                    <span class="external_link material-symbols-outlined">
+                        open_in_new
+                    </span>
+                </button>
+                <button class="condensed_button" onclick='openURL("github.com/twbs/bootstrap/blob/v5.3.3/LICENSE")'>MIT
                     <span class="external_link material-symbols-outlined">
                         open_in_new
                     </span>
