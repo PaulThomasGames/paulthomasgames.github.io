@@ -141,13 +141,8 @@ p {
 }
 
 p.marginal_p {
-    font-size: min(3.00vw,4.60vh);
+    font-size: min(3.00vw,4.20vh);
     line-height: min(3.80vw,5.80vh);
-}
-
-p.default_size {
-    font-size: min(1.80vw,3.60vh);
-    line-height: min(3.20vw,5.20vh);
 }
 
 button {
