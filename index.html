@@ -4,7 +4,7 @@
         <title>Paul Thomas Projects</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Funnel+Sans:wght@300..800&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="assets/p_fav.ico">
         <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -177,9 +177,10 @@
             }
 
             p {
-                font-family: "Roboto", serif;
-                font-weight: 500;
+                font-family: "Funnel Sans", serif;
+                font-weight: 700;
                 font-style: normal;
+                font-optical-sizing: auto;
                 color: white;
                 font-size: min(1.80vw,3.60vh);
                 line-height: min(3.20vw,5.20vh);
@@ -202,7 +203,7 @@
                 font-weight: 900;
                 font-style: normal;
                 font-variation-settings:
-                    "wdth" 100;
+                    "wdth" 65;
                 color: white;
             }
 
@@ -216,7 +217,7 @@
                 font-style: normal;
                 font-optical-sizing: auto;
                 font-variation-settings:
-                    "wdth" 100;
+                    "wdth" 65;
                 transition: all 200ms ease-out;
             }
 
@@ -500,18 +501,13 @@
                 <p class="default_size">
                     "The backrooms wallpaper texture" (<a href="https://sketchfab.com/sashago00002">Scans and textures</a>) is licensed under CC Attribution.
                     <br>
-                    Archivo (<a href="https://omnibus-type.com">Omnibus-Type</a>) is licensed under the SIL Open Font License, Version 1.1.
+                    Archivo (<a href="https://github.com/Omnibus-Type/Archivo">Omnibus-Type</a>) is licensed under the SIL Open Font License, Version 1.1.
                     <br>
-                    Roboto (<a href="https://christianrobertson.com">Christian Robertson</a>) is licensed under the Apache License, Version 2.0.
+                    Funnel Sans (<a href="https://github.com/Dicotype/Funnel">Dicotype</a>) is licensed under the SIL Open Font License, Version 1.1.
                     <br>
                     Bootstrap (<a href="https://github.com/twbs/bootstrap">The Bootstrap Authors</a>) is licensed under the MIT License.
                 </p>
                 <button class="condensed_button" onclick='openURL("openfontlicense.org")'>SIL 1.1
-                    <span class="external_link material-symbols-outlined">
-                        open_in_new
-                    </span>
-                </button>
-                <button class="condensed_button" onclick='openURL("apache.org/licenses/LICENSE-2.0")'>APACHE 2.0
                     <span class="external_link material-symbols-outlined">
                         open_in_new
                     </span>
