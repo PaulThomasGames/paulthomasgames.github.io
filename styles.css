@@ -1,0 +1,272 @@
+html {
+    scroll-behavior: smooth;
+    cursor:default;
+}
+
+body {
+    margin: 0;
+    background: black;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+width: 6px;
+}
+
+::-webkit-scrollbar-track {
+background: black;
+}
+
+::-webkit-scrollbar-thumb {
+background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #ffffff;
+}
+
+hr {
+    border: none;
+    border-bottom: 6px solid white;
+}
+
+.main_container {
+    width: 90vw;
+    height: 100%;
+    padding: 5vw;
+    margin: 0;
+}
+
+div.socials {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: min(1vw, 2vh);
+    margin-bottom: min(1.60vw,2.60vh);
+}
+
+svg {
+    width: min(2vw, 5vh);
+    height: min(2vw, 5vh);
+    fill: white;
+    transition: all 200ms ease-out;
+}
+
+svg:hover {
+    fill: #ff00ff
+}
+
+div.group_spacer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50vh;
+    background: none;
+}
+
+div.group_unit {
+    width: 100%;
+    height: 160vh;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+div.group_marginal {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5vh;
+    background-color: none;
+    border: none;
+    overflow: hidden;
+    height: 90vh;
+    border: none;
+}
+
+div.img_container {
+    position: relative;
+    width: 160vh;
+    max-width: 90vw;
+    height: calc(45vh - 5vw);
+    max-height: 40vw;
+    margin: 0;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 0;
+    border: none;
+}
+
+img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    object-fit: cover;
+
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+}
+
+p {
+    font-family: "Funnel Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+    color: white;
+    font-size: min(1.80vw,3.60vh);
+    line-height: min(3.20vw,5.20vh);
+    margin: 0;
+}
+
+p.marginal_p {
+    font-size: min(3.00vw,4.60vh);
+    line-height: min(3.80vw,5.80vh);
+}
+
+p.default_size {
+    font-size: min(1.80vw,3.60vh);
+    line-height: min(3.20vw,5.20vh);
+}
+
+button {
+    font-family: "Archivo", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 65;
+    color: white;
+}
+
+h1 {
+    font-size: min(6.50vw,11.50vh);
+    margin: 0;
+    margin-bottom: min(1vw,1.50vh);
+    line-height: min(7.00vw,12.00vh);
+    font-family: "Archivo", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-variation-settings:
+        "wdth" 65;
+    transition: all 200ms ease-out;
+}
+
+h1.marginal_header {
+    font-size: min(7.50vw,12.50vh);
+    line-height: min(7.50vw,12.50vh);
+    margin-bottom: min(0.60vw,1.20vh);
+}
+
+a {
+    color: #00ffff;
+    cursor: pointer;
+}
+
+button {
+    width: min(28vw,80vh);
+    height: min(4vw,18vh);
+    background: none;
+    outline: none;
+    border: 2px solid #ffff00;
+    color: #ffff00;
+    transition: all 200ms ease-out;
+    margin: 0;
+    margin-top: min(2vw,5vh);
+    font-size: min(2.20vw,5.40vh);
+    cursor: pointer;
+}
+
+button.condensed_button {
+    width: min(16vw,60vh);
+    height: min(4vw,18vh);
+    font-size: min(1.80vw,5.40vh);
+}
+
+button.marginal_button {
+    margin-top: min(3vw,5vh);
+    width: min(28vw,84vh);
+    height: min(5vw,16vh);
+    font-size: min(2.60vw,7.40vh);
+}
+
+button:hover {
+    background: #ffff00;
+    outline: none;
+    border: none;
+    color: black;
+}
+
+h1 {
+    color:#ffff00;
+}
+
+#scroll_container {
+    position: absolute;
+    top: 2vw;
+    border: none;
+    overflow: hidden;
+    border: none;
+    width: 90vw;
+}
+
+.horizontal_items {
+    display: flex;
+    line-height: 0;
+    width: fit-content;
+}
+
+.horizontal_item {
+    white-space: nowrap;
+}
+
+.horizontal {
+    color: white;
+    font-size: 1vw;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@keyframes infiniteScroll {
+    from {transform: translateX(0) }
+    to {transform: translateX(calc(0% - 50%));}
+}
+
+.horizontal_items {
+    animation-name: infiniteScroll;
+    animation-duration: 45s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 800,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.external_link {
+    font-size: min(1.20vw,3.10vh);
+}
+
+.arrow {
+    font-size: min(1.75vw,4.40vh);
+}
