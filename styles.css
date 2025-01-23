@@ -12,9 +12,9 @@ body {
 :root {
     --text: #ffffff;
     --background: #000000;
-    --main: #2a36db;
-    --secondary: #2a36db;
-    --accent: #2a36db;
+    --main: #ffff00;
+    --secondary: #00ffff;
+    --accent: #ff00ff;
 }
 
 ::-webkit-scrollbar {
