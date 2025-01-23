@@ -5,7 +5,7 @@ html {
 
 body {
     margin: 0;
-    background: var(--background);
+    background: var(--main);
     overflow-x: hidden;
 }
 
@@ -22,20 +22,21 @@ width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-background: var(--background);
+background: var(--secondary);
 }
 
 ::-webkit-scrollbar-thumb {
-background: var(--text);
-}
-
-::-webkit-scrollbar-thumb:hover {
-background: var(--text);
+background: var(--background);
 }
 
 hr {
     border: none;
-    border-bottom: 6px solid var(--text);
+    border-bottom: 6px solid var(--main);
+}
+
+hr.marginal_hr {
+    border: none;
+    border-bottom: 6px solid var(--background);
 }
 
 .main_container {
@@ -43,6 +44,28 @@ hr {
     height: 100%;
     padding: 5vw;
     margin: 0;
+}
+
+.brightcircle {
+    position: absolute;
+    margin-top: 30vh;
+    left: 0;
+    translate: 0 -5vh;
+    width: 100vw;
+    height: 10vh;
+    border-radius: 50%;
+    background-color: white;
+    z-index: -1;
+}
+
+.brightbox {
+    position: absolute;
+    margin-top: 30vh;
+    left: 0;
+    width: 100vw;
+    height: 210vh;
+    background-color: white;
+    z-index: -1;
 }
 
 div.socials {
@@ -59,7 +82,7 @@ div.socials {
 svg {
     width: min(2vw, 5vh);
     height: min(2vw, 5vh);
-    fill: var(--text);
+    fill: var(--background);
     transition: fill 100ms ease-out;
 }
 
@@ -145,6 +168,7 @@ p {
 p.marginal_p {
     font-size: min(3.00vw,3.40vh);
     line-height: min(3.80vw,5.40vh);
+    color: var(--background);
 }
 
 button {
@@ -181,6 +205,7 @@ h1.marginal_header {
     font-size: min(7.50vw,12.50vh);
     line-height: min(7.50vw,12.50vh);
     margin-bottom: min(0.60vw,1.20vh);
+    color: var(--background); text-shadow: none;
 }
 
 a {
@@ -212,6 +237,17 @@ button.marginal_button {
     width: min(28vw,84vh);
     height: min(5vw,16vh);
     font-size: min(2.60vw,7.40vh);
+    background: var(--main);
+    outline: none;
+    border: 2px solid var(--background);
+    color: var(--background);
+}
+
+button.marginal_button:hover {
+    background: var(--background);
+    outline: none;
+    border: none;
+    color: var(--main);
 }
 
 button:hover {

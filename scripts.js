@@ -11,15 +11,6 @@ window.onload = (event) => {
         document.getElementById("box_main").style.display = "block";
         document.getElementById("box_alt").style.display = "none";
     }
-
-    const horizontal_elements = document.getElementsByClassName("horizontal");
-    const media_entries = ["THE NEW APARTMENT", "BACKROOMS FOUND FOOTAGE", "TURKEY TERMINATOR", "PROJECTED RAYMARCHING"]
-    const media_string = media_entries.join(' / ') + ' /&nbsp';
-
-    for (const element of horizontal_elements) {
-        element.innerHTML = media_string;
-    }
-
 }
 
 window.onresize = (event) => {
