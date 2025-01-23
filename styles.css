@@ -10,11 +10,11 @@ body {
 }
 
 :root {
-    --text: #ffffff;
-    --background: #000000;
-    --main: #ffff00;
-    --secondary: #00ffff;
-    --accent: #ff00ff;
+    --text: #2a36db;
+    --background: #fff;
+    --main: #2a36db;
+    --secondary: #21215b;
+    --accent: #2a36db;
 }
 
 ::-webkit-scrollbar {
@@ -49,16 +49,18 @@ div.socials {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
+    gap: min(1.20vw, 2.40vh);
     align-items: center;
-    gap: min(1vw, 2vh);
     margin-bottom: min(1.60vw,2.60vh);
+    height: min(2.20vw, 5.20vh);
 }
 
 svg {
     width: min(2vw, 5vh);
     height: min(2vw, 5vh);
     fill: var(--text);
+    transition: fill 100ms ease-out;
 }
 
 svg:hover {
@@ -135,7 +137,7 @@ p {
     font-style: normal;
     font-optical-sizing: auto;
     color: var(--text);
-    font-size: min(1.80vw,3.60vh);
+    font-size: min(1.60vw,3.40vh);
     line-height: min(3.20vw,5.20vh);
     margin: 0;
 }
@@ -157,6 +159,8 @@ button {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    border-radius: 4px;
+    transition: background-color 100ms ease-out, color 100ms ease-out;
 }
 
 h1 {
@@ -179,18 +183,14 @@ h1.marginal_header {
     margin-bottom: min(0.60vw,1.20vh);
 }
 
-/* h1:hover {
-    color: var(--background); text-shadow: -1px -1px 0 var(--main), 1px -1px 0 var(--main), -1px 1px 0 var(--main), 1px 1px 0 var(--main)
-} */
-
 a {
     color: var(--secondary);
     cursor: pointer;
 }
 
 button {
-    width: min(28vw,80vh);
-    height: min(4vw,18vh);
+    width: min(28vw,78vh);
+    height: min(4vw,16vh);
     background: none;
     outline: none;
     border: 2px solid var(--main);
@@ -218,7 +218,7 @@ button:hover {
     background: var(--main);
     outline: none;
     border: none;
-    color: black;
+    color: var(--background);
 }
 
 h1 {
