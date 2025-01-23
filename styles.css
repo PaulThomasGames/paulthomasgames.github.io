@@ -48,11 +48,10 @@ hr.marginal_hr {
 
 .brightcircle {
     position: absolute;
-    margin-top: 30vh;
-    left: 0;
-    translate: 0 -5vh;
-    width: 100vw;
-    height: 10vh;
+    left: -50vw;
+    translate: 0 -30vh;
+    width: 200vw;
+    height: 60vh;
     border-radius: 50%;
     background-color: white;
     z-index: -1;
@@ -60,9 +59,8 @@ hr.marginal_hr {
 
 .brightbox {
     position: absolute;
-    margin-top: 30vh;
-    left: 0;
-    width: 100vw;
+    left: -50vw;
+    width: 200vw;
     height: 210vh;
     background-color: white;
     z-index: -1;
