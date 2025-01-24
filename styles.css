@@ -33,9 +33,9 @@ body {
     background: var(--accent);
   }
   
-  ::selection {
+::selection {
     background: var(--accent);
-  }
+}
 
 hr {
     border: none;
@@ -56,7 +56,7 @@ hr.marginal_hr {
 
 .brightcircle {
     position: absolute;
-    margin-top: 30vh;
+    margin-top: 20vh;
     left: 0;
     translate: 0 -5vh;
     width: 100vw;
@@ -68,10 +68,20 @@ hr.marginal_hr {
 
 .brightbox {
     position: absolute;
-    margin-top: 30vh;
+    margin-top: 20vh;
     left: 0vw;
     width: 100vw;
-    height: 190vh;
+    height: 130vh;
+    background-color: white;
+    z-index: -1;
+}
+
+.brightbox_large {
+    position: absolute;
+    margin-top: 20vh;
+    left: 0vw;
+    width: 100vw;
+    height: 160vh;
     background-color: white;
     z-index: -1;
 }
@@ -98,7 +108,16 @@ svg:hover {
     fill: var(--secondary);
 }
 
+
 div.group_spacer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 20vh;
+    background: none;
+}
+
+div.group_spacer_large {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -108,7 +127,7 @@ div.group_spacer {
 
 div.group_unit {
     width: 100%;
-    height: 140vh;
+    height: 110vh;
     padding: 0;
     margin: 0;
     border: none;
