@@ -46,6 +46,11 @@ hr.marginal_hr {
     margin: 0;
 }
 
+.brightmargin {
+    margin-top: 50vh;
+
+}
+
 .brightcircle {
     position: absolute;
     left: -50vw;
