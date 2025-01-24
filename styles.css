@@ -14,19 +14,19 @@ body {
     --background: #fff;
     --main: #2a36db;
     --secondary: #21215b;
-    --accent: #2a36db;
+    --accent: #242424;
 }
 
 ::-webkit-scrollbar {
-width: 6px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-background: var(--secondary);
+    background: var(--accent);
 }
 
 ::-webkit-scrollbar-thumb {
-background: var(--background);
+    background: var(--background);
 }
 
 hr {
