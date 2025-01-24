@@ -45,18 +45,18 @@ hr.marginal_hr {
     padding: 5vw;
     margin: 0;
 }
-
+/* 
 .brightmargin {
-    margin-top: 50vh;
-
-}
+    margin-top: 30vh;
+} */
 
 .brightcircle {
     position: absolute;
-    left: -50vw;
-    translate: 0 -30vh;
-    width: 200vw;
-    height: 60vh;
+    margin-top: 30vh;
+    left: 0;
+    translate: 0 -5vh;
+    width: 100vw;
+    height: 10vh;
     border-radius: 50%;
     background-color: white;
     z-index: -1;
@@ -64,8 +64,9 @@ hr.marginal_hr {
 
 .brightbox {
     position: absolute;
-    left: -50vw;
-    width: 200vw;
+    margin-top: 30vh;
+    left: 0vw;
+    width: 100vw;
     height: 210vh;
     background-color: white;
     z-index: -1;
