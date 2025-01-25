@@ -1,3 +1,18 @@
+/*
+
+Archivo (Omnibus-Type) is licensed under the SIL Open Font License, Version 1.1.
+
+Funnel Sans (Dicotype) is licensed under the SIL Open Font License, Version 1.1.
+
+Bootstrap (The Bootstrap Authors) is licensed under the MIT License.
+
+https://openfontlicense.org
+
+https://github.com/twbs/bootstrap/blob/v5.3.3/LICENSE
+
+*/
+
+
 function openURL (url) {
     window.open("https://" + url, '_blank').focus();
 }
