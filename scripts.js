@@ -18,7 +18,6 @@ function openURL (url) {
 }
 
 window.onload = (event) => {
-    document.getElementById("p_intro").innerHTML = `Hello there, my name is Paul Thomas and I'm ${moment().diff('2007-07-08', 'years')} years old.<br>I design video games and other digital media.`;
     if($(window).width() < $(window).height()) {
         document.getElementById("box_main").style.display = "none";
         document.getElementById("box_alt").style.display = "block";
