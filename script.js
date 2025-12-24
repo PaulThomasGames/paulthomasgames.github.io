@@ -7,6 +7,9 @@ window.addEventListener("load", (event) => {
     $("#asset_title").attr('draggable', 'false');
     $("#asset_petals").attr('draggable', 'false');
 
+    $("#background_image").attr('draggable', 'false');
+    $("#background_video").attr('draggable', 'false');
+
     $("#asset_petals").on("animationstart", function(){
         $("#asset_petals").css('opacity', '1');
     })
@@ -119,4 +122,5 @@ function clickFlower() {
     $("#asset_petals").addClass("spin_flower");
     setTimeout(()=>{$("#asset_petals").removeClass("spin_flower"); $("#asset_petals").addClass("can_hover")},1300)
     console.log("Press");
+
 }
