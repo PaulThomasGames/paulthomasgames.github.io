@@ -1,14 +1,10 @@
-# Paul Thomas Games
+# Twisted Flower
 
-The repository for the Paul Thomas Games website.
+The repository for the Twisted Flower website.
 
-Can be viewed at <a href="https://paulthomasgames.github.io">paulthomasgames.github.io</a>.
+Can be viewed at <a href="https://twisted.games">twisted.games</a>.
 
 # Licensing
-
-Archivo (<a href="https://github.com/Omnibus-Type/Archivo">Omnibus-Type</a>) is licensed under the SIL Open Font License, Version 1.1.
-
-Funnel Sans (<a href="https://github.com/Dicotype/Funnel">Dicotype</a>) is licensed under the SIL Open Font License, Version 1.1.
 
 Bootstrap (<a href="https://github.com/twbs/bootstrap">The Bootstrap Authors</a>) is licensed under the MIT License.
 
