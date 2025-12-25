@@ -129,7 +129,7 @@ div#background_image {
     height: 100%;
     background-repeat: no-repeat;
     background-image: url(assets/bgs/background_0.png);
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.6);
     background-blend-mode:darken;
     background-size: cover;
     background-attachment: fixed;
@@ -233,8 +233,8 @@ div.content_main_desc > p {
     font-weight: 400;
     font-style: normal;
     margin: 0;
-    font-size: max(max(2.6vh, 1.175vw), 20px);
-    line-height: max(max(2.7vh, 1.225vw), 22px);
+    font-size: max(max(2.6vh, 2.025vw), 20px);
+    line-height: max(max(2.7vh, 2.225vw), 22px);
     overflow: hidden;
     text-overflow: clip;
 }
@@ -259,8 +259,15 @@ div.content_main_button > button {
     padding: 1.5vh;
     font-size: max(min(3.2vh, 5.75vw), 24px);
     line-height: max(min(3.3vh, 6.75vw), 28px);
-    min-width: 20vw;
-    border: 1px solid white;
+    min-width: max(20vw, 256px);
+    border: none;
+    outline: none;
+    border-left: 0.1vw solid white;
+    border-right: 0.1vw solid white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    border-radius: 0.8vw;
     transition: all 200ms ease-out;
 }
 

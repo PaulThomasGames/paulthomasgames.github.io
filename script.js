@@ -122,5 +122,4 @@ function clickFlower() {
     $("#asset_petals").addClass("spin_flower");
     setTimeout(()=>{$("#asset_petals").removeClass("spin_flower"); $("#asset_petals").addClass("can_hover")},1300)
     console.log("Press");
-
 }
