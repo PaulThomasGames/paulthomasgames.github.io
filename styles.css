@@ -63,6 +63,7 @@ svg {
     height: max(2.8vw, 3.2vh);
     fill: white;
     transition: fill 100ms ease-out;
+    cursor: pointer;
 }
 
 svg:hover {
@@ -365,4 +366,5 @@ background: #333333;
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 background: #555;
+
 }
